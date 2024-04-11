@@ -1,0 +1,23 @@
+<script> 
+var numero=0;
+numero = parseInt(prompt("ingrese numero"),0);
+if (numero >= 0){
+    if (numero >= 10000){
+        document.writeln("El numero tiene 5 o mas cifras ");
+    }
+    if (numero >= 1000 && numero <=9999){
+        document.writeln("el numero tiene 4 cifras");
+    }
+    if (numero >=100 && numero <=999){
+        document.writeln("el numero tiene 3 cifras");
+    }
+    if (numero >=10 && numero <= 99){
+        document.writeln("el numero tiene 2 cifras");
+    }
+    if (numero >=0 && numero <=9){
+        document.writeln("el nuero posee 1 cifras");
+    }
+}else{
+    document.writeln("ERROR:El numero no es positivo");
+}
+</script>

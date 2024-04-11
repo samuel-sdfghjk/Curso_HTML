@@ -1,0 +1,21 @@
+<script>
+   function TablasWhile(){
+	var multiplicando=1;
+	var multiplicador=1;
+	document.write("<br> Tablas con ciclo while en JavaScript");
+	while(multiplicando <=10){
+		while(multiplicador <= 10){
+			var resultado = multiplicando * multiplicador;
+			document.write("<dd>");
+			document.write( multiplicando + " X " + multiplicador + " = " + resultado);
+			document.write("</dd>");
+			multiplicador += 1;
+		}
+		multiplicador = 1;
+		multiplicando +=1;
+		document.write('<br>' );	
+	}
+}
+
+TablasWhile();
+</script>    

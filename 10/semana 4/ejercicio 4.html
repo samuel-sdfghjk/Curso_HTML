@@ -1,0 +1,30 @@
+<script>
+
+    //AUTOR:samuel camilo pinchao delgado
+
+    var vendedores;
+    var valordeventa1;
+    var valordeventa2;
+    var comision;
+
+    vendedores = parseInt(prompt("ingrese el numero de vendedores"));
+    
+
+    for(var i = 1; i<=vendedores; i++ ){
+
+        document.writeln("Vendedor ",i);
+        valordeventa1 = parseInt(prompt("ingrese el valor de ventas menores a 100000 del vendedor "+i));
+        valordeventa2 = parseInt(prompt("ingrese el valor de ventas mayores a 100000 del vendedor "+i));
+        comision = (valordeventa1 * 2, 5 / 100) + (valordeventa2 * 75 / 100);
+
+
+        document.writeln("la comision es: ", comision, "<br>");
+
+
+
+    }
+    
+    
+
+
+</script>

@@ -1,0 +1,20 @@
+<script>
+    var A=0;
+    var B=0;
+    var C=0;
+    var cuadrado
+    var cubo
+    var producto
+    var diferencia
+    A=parseInt(prompt("ingrese valor de A"),0);
+    B=parseInt(prompt("ingrese valor de B"),0);
+    C=parseInt(prompt("ingrese valor de C"),0);
+    cuadrado=(A + B + C)**2;
+    document.writeln("el resultado de la suma de "+ A + "+" + B + "+" + C +" elevado al cuadrado es:"+ cuadrado, "<br>");
+    producto=A * B * C;
+    document.writeln("el valor de "+ A +"*"+ B +"*"+ C + "es:"+ producto,"<br>");
+    cubo=producto**3;
+    document.writeln("el valor del producto"+ producto +" elevado al cubo"+ cubo,"<br>");
+    diferencia=cuadrado-cubo;
+    document.writeln("la diferencia entre ",cubo," y ",cuadrado, " es ", diferencia,"<br>");
+</script>

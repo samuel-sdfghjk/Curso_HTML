@@ -1,0 +1,27 @@
+<script>
+  //examen dados
+
+  var dado1;
+  var dado2;
+
+  dado1 = parseInt(prompt("ingrese dado 1"),0);
+  dado2 = parseInt(prompt("ingrese dado 2"),0);
+
+  if(dado1 == dado2){
+    document.writeln("par <br>");
+  }else{
+    document.writeln("lanzamiento <br>");
+  }
+  
+  if(dado1+dado2 < 6){ 
+    document.writeln("juego perdido <br>");
+  }
+  
+  
+  if(dado1<=2 && dado2<=2){
+    document.writeln("puntaje deficiente");
+  }else if (dado1 || dado2 >=5){
+    document.writeln("puntaje alto");
+  }
+
+</script>

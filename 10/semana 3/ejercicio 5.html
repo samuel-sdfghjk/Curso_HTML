@@ -1,0 +1,29 @@
+<script>
+
+    var nombre
+    var codigo
+    var total
+    var porcentaje
+    var comision
+    
+    nombre = prompt("ingrese nombre");
+    codigo = parseInt(prompt("ingrese codigo (1, 2 0 3)"),0)
+    total = parseInt(prompt("igrese total de ventas"));
+
+
+    if (codigo == 1){
+        porcentaje = 0.05;
+    }else if (codigo == 2){
+        porcentaje = 0.08;
+    }else if (codigo == 3){
+        porcentaje = 0.03
+    }else{
+        document.writeln("el codigo no es valido")
+    }
+
+    comision = total * porcentaje;
+
+    document.writeln("la comision de ", nombre ," es de ", comision);
+
+
+</script>

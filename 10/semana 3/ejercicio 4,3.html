@@ -1,0 +1,39 @@
+<script>
+    var sexo;
+    var edad=0;
+    var tiempo=0;
+
+    sexo = prompt("Ingrese el sexo (H o M)");
+    edad = parseInt(prompt("ingrese edad"),0);
+    tiempo = parseInt(prompt("ingrese tiempo"),0);
+    
+    if(sexo == "H"){
+        
+        if(edad<40){
+            
+            if(tiempo<=150){
+            document.writeln("el atleta es el indicado para el maraton internacional");
+            }else {
+                document.writeln("el atleta no es el indicado");
+            }
+        }else if(edad>=40){
+            if(tiempo<=175){
+                document.writeln("el atleta es el indicado para el maraton internacional");
+            }else {
+                document.writeln("el atleta no es el indicado");
+            }
+        }
+
+    }else if (sexo == "M"){
+
+        if (tiempo<180){
+            document.writeln("la atleta es la indicada para el maraton internacional");
+        }else {
+            document.writeln("la atleta no es la indicada");
+        }
+
+    }else{
+        document.writeln("el sexo no es valido, vuelva a ingresar los datos")
+    }
+    
+</script>

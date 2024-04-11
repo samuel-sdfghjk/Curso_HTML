@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="http://www.google.com" method="post" target="_blank">
+
+        Componente text: 
+        <input type="text" name="pelicula" value="titanic" size="20" disabled="disabled"><br>
+
+        Componente radio:
+        <input type="radio" name="genero" id="idgenero" checked="checked" ><br>
+
+        Componente checkbox:
+        <input type="checkbox" name="hobbie" readonly="readonly" ><br>
+
+        Componente password:
+        <input type="password" name="clave" id="idclave"><br>
+
+        Componente file:
+        <input type="file" name="archivo" id="idarchivo"><br>
+<form action="http://www.google.com" method="post" target="_blank">
+
+        <br>
+        <select name="transporte">
+            <option value="1">Coche</option>
+            <option value="2">Avión</option>
+            <option value="3">tren</option>
+        </select>
+
+        <form action="http://www.google.com" method="post" target="_blank" size="3">
+            Componentes select: 
+            <select name="transporte" size="2" multiple="multiple">
+                <option value="0">-Seleccione opción-</option>
+                <option value="1">Coche</option>
+                <option value="2" selected="selected">Avión</option>
+                <option value="3">tren</option>
+            </select>
+            <br><br>
+            Componentes select:
+            <select name="ingreso" id="idingreso" >
+                <option value="0">-Seleccione opción-</option>
+                <option value="2014">Año 2014</option>
+                <option value="2015">Año 2015</option>
+                <option value="2016">Año 2016</option>
+            </select>
+        </form>
+
+        Componente textarea:<br />
+        <textarea name="observacion" cols="100" rows="10">
+            Aquí escribimos nuestro texto extenso que puede ocupar múltiples líneas, el cual se verá muy bien en este tipo de componente!
+        </textarea>
+
+        Componente submit:
+        <input type="submit" value="enviar"  name="archivo"  id="idarchivo">
+
+</form>
+</body>
+</html>

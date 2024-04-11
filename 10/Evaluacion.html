@@ -1,0 +1,17 @@
+<script>
+    var horas=0;
+    var minutos=0;
+    var segundos=0;
+    var conversion_horas=0;
+    var conversion_minutos=0;
+    var conversion_segundos=0;
+    horas = parseInt(prompt("ingrese horas"),0);
+    minutos = parseInt(prompt("ingrese minutos"),0);
+    segundos = parseInt(prompt("ingrese segundos"),0);
+    conversion_horas = (minutos / 60) + (segundos / 3600) + horas;
+    document.writeln("el total de horas es: ",conversion_horas,"<br>");
+    conversion_minutos = (horas * 60) + (segundos / 60) + minutos;
+    document.writeln("el total de minutos es: ",conversion_minutos,"<br>");
+    conversion_segundos = (horas * 3600) + (minutos * 60) + segundos;
+    document.writeln("el total de sgundos es: ",conversion_segundos,"<br>");
+</script>

@@ -1,0 +1,20 @@
+<script>
+    var x, z, sumatoria, producto;
+    var i = 1;
+
+    x = parseInt(prompt("ingrese valor de x"))
+    z = parseInt(prompt("ingrese valor de z"))
+
+    x = x +1;
+    sumatoria = 0;
+    producto = 1;
+
+    while(x < z){
+        sumatoria = sumatoria + x;
+        producto = producto * x;
+        x = x + 1;
+
+    }
+    document.writeln("la sumatoria es: "+ sumatoria + "<br>");
+    document.writeln("el producto es: "+ producto);
+</script>
